@@ -58,6 +58,52 @@
             background-color: white !important;
         
         }
+
+        /**/
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+        }
+        @media (max-width: 500px) {
+            .product-show {
+            grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 610px) {
+            .pt-4 .row .col-sm-1 {
+            min-width: 0;
+            min-height: 0;
+            padding: 0;
+            margin: 0;
+            width: 0;
+            height: 0;
+            }
+
+            .fa-map-marker {
+            min-width: 0;
+            min-height: 0;
+            padding: 0;
+            margin: 0;
+            width: 0;
+            height: 0;
+            visibility: collapse;
+            }
+
+            .display-3 {
+            font-size: x-large;
+            }
+
+            p.limit-width.lead {
+            font-size: large;
+            }
+
+            p.limit-width {
+            font-size: medium;
+            }
+        }
+
     </style>
 
 </head>
@@ -108,50 +154,74 @@
             </div>
             <div class="container">
                 <div class="row justify-content-center">
-                <div class="col-md-4 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Alat Masak Serbaguna</h4>
-                        </div>
-                        <div class="card-body">
-                            <img src="assets/Produk 1.jpeg" alt="produk 1" class="img-fluid mx-auto d-block">
-                            <p class="price">Rp 120.000,00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Peralatan Styling Rambut</h4>
-                        </div>
-                        <div class="card-body">
-                            <img src="assets/Produk 2.jpeg" alt="produk 2" class="img-fluid mx-auto d-block">
-                            <p class="price">Rp 72.500,00</p>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Alat Masak Serbaguna</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/Produk 1.jpeg" alt="produk 1" class="img-fluid mx-auto d-block">
+                                <p class="price">Rp 120.000,00</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Hair Dryer</h4>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Peralatan Styling Rambut</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/Produk 2.jpeg" alt="produk 2" class="img-fluid mx-auto d-block">
+                                <p class="price">Rp 72.500,00</p>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <img src="assets/produk 3.jpeg" alt="produk 3" class="img-fluid mx-auto d-block">
-                            <p class="price">Rp 118.000,00</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Hair Dryer</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/produk 3.jpeg" alt="produk 3" class="img-fluid mx-auto d-block">
+                                <p class="price">Rp 118.000,00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            
         </div>
-        
     </div>
 
     <div class="card" style="padding: 50px; text-align: center; background-color: #F9E4C8;">
         <h3>Find us in Shopee</h3>
-        <button class="button_1 mx-auto d-block"><a href="https://shopee.co.id/padabanic.official.shop?originalCategoryId=101665&page=0" class="button">Shopee</a></button>
+        <a href="https://shopee.co.id/padabanic.official.shop"><img src="assets/pngwing.com (1).png" alt="shopee" style="width: 70px; height: 70px;"></a>
     </div>
+
+    <div class="map">
+        <div class="container">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-md-6 align-self-center">
+                    <div class="exact-address my-auto">
+                        <h4 class="text-center">Lokasi Toko</h4>
+                        <div class="row mt-3">
+                            <div class="col-sm-1">
+                                <i class="fa fa-map-marker fa-3x" aria-hidden="true" style="color: rgb(72, 177, 240);"></i>
+                            </div>
+                            <div class="col-sm-11">
+                                <p class="ml-3">Jalan Ruko Lagoon Blok J02/20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center p-4"><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1391290664205!2d106.51545721476924!3d-6.245389495479276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4207422c23a5e3%3A0xefd18092ac393e30!2sRuko%20Lagoon%20Ville%2C%20Cikupa%2C%20Kec.%20Cikupa%2C%20Tangerang%2C%20Banten!5e0!3m2!1sen!2sid!4v1632906746760!5m2!1sen!2sid"
+                  width="600" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <div class="container" style="margin-top: 50px;">
@@ -163,7 +233,7 @@
                 <div class="col-lg-4">
                     <h5>Produk</h5>
                     <a href="peralatanSR.html"><p>Peralatan Styling Rambut</p></a>
-                    <a href="hairdryer.html"><p>hair Dryer</p></a>
+                    <a href="hairdryer.html"><p>Hair Dryer</p></a>
                     <a href="blender.html"><p>Juicer, Blender & Mesin Kacang Kedelai</p></a>
                     <a href="dispenser.html"><p>Dispenser & Filter Air</p></a>
                     <a href="mixer.html"><p>Mixer</p></a>
